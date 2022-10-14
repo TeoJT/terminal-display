@@ -28,12 +28,12 @@ int main() {
     //causing the number to stay in place on the screen
 
     for (int b = 0; b < numBits; b++) {
-        pixel(bitx[b], bity[b], 0, 0, 0);
+        pixel(bitx[b], bity[b], color(0, 0, 0));
         bity[b]++;
         if (bity[b] > t_d.height) {
             bity[b] = 0;
         }
-        pixel(bitx[b], bity[b], bitr[b], bitg[b], bitb[b]);
+        pixel(bitx[b], bity[b], color(bitr[b], bitg[b], bitb[b]));
     }
     terminalDisplayRender();
 

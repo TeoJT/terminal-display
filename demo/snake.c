@@ -65,29 +65,29 @@ int* generateApple() {
 }
 
 void D(int x, int y) {
-    pixel(0+x, 0+y, 255,255,255);
-    pixel(1+x, 0+y, 255,255,255);
-    pixel(2+x, 1+y, 255,255,255);
-    pixel(2+x, 2+y, 255,255,255);
-    pixel(2+x, 3+y, 255,255,255);
-    pixel(0+x, 1+y, 255,255,255);
-    pixel(0+x, 2+y, 255,255,255);
-    pixel(0+x, 3+y, 255,255,255);
-    pixel(0+x, 4+y, 255,255,255);
-    pixel(1+x, 4+y, 255,255,255);
+    pixel(0+x, 0+y, color(255,255,255));
+    pixel(1+x, 0+y, color(255,255,255));
+    pixel(2+x, 1+y, color(255,255,255));
+    pixel(2+x, 2+y, color(255,255,255));
+    pixel(2+x, 3+y, color(255,255,255));
+    pixel(0+x, 1+y, color(255,255,255));
+    pixel(0+x, 2+y, color(255,255,255));
+    pixel(0+x, 3+y, color(255,255,255));
+    pixel(0+x, 4+y, color(255,255,255));
+    pixel(1+x, 4+y, color(255,255,255));
 }
 
 void E(int x, int y) {
-    pixel(0+x, 0+y, 255,255,255);
-    pixel(0+x, 1+y, 255,255,255);
-    pixel(0+x, 2+y, 255,255,255);
-    pixel(0+x, 3+y, 255,255,255);
-    pixel(0+x, 4+y, 255,255,255);
-    pixel(1+x, 0+y, 255,255,255);
-    pixel(2+x, 0+y, 255,255,255);
-    pixel(1+x, 2+y, 255,255,255);
-    pixel(1+x, 4+y, 255,255,255);
-    pixel(2+x, 4+y, 255,255,255);
+    pixel(0+x, 0+y, color(255,255,255));
+    pixel(0+x, 1+y, color(255,255,255));
+    pixel(0+x, 2+y, color(255,255,255));
+    pixel(0+x, 3+y, color(255,255,255));
+    pixel(0+x, 4+y, color(255,255,255));
+    pixel(1+x, 0+y, color(255,255,255));
+    pixel(2+x, 0+y, color(255,255,255));
+    pixel(1+x, 2+y, color(255,255,255));
+    pixel(1+x, 4+y, color(255,255,255));
+    pixel(2+x, 4+y, color(255,255,255));
     
 }
 
@@ -195,7 +195,7 @@ void main() {
             alive = 0;
         }
 
-        pixel(hx, hy, 0, 255, 0);
+        pixel(hx, hy, color(0,255,0));
 
         // Applepos is a pointer that points to the pixel of the apple.
         // Use it directly to render the apple.
