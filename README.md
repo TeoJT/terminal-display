@@ -1,5 +1,5 @@
 # terminal-display
-A really basic way to display chonky graphics in your terminal.
+A really basic way to display pixel graphics in your terminal.
 
 ## Features
 - 2 demos!
